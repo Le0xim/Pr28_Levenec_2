@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Небо на весь экран -->
+    <ImageView
+        android:id="@+id/sky"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="sky"
+        android:src="@drawable/sky"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Солнце -->
+    <ImageView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="sun"
+        android:src="@drawable/sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Трава внизу -->
+    <ImageView
+        android:id="@+id/grass"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:contentDescription="grass"
+        android:src="@drawable/grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Часы (циферблат) -->
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:contentDescription="clock"
+        android:src="@drawable/clock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Часовая стрелка (накладывается поверх циферблата) -->
+    <ImageView
+        android:id="@+id/hour_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:contentDescription="hour hand"
+        android:src="@drawable/hour_hand"
+        app:layout_constraintBottom_toBottomOf="@+id/clock"
+        app:layout_constraintEnd_toEndOf="@+id/clock"
+        app:layout_constraintStart_toStartOf="@+id/clock"
+        app:layout_constraintTop_toTopOf="@+id/clock" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
