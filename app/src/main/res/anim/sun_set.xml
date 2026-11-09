@@ -5,15 +5,15 @@
     android:interpolator="@android:anim/accelerate_decelerate_interpolator"
     android:shareInterpolator="false">
     <scale
-        android:fromXScale="1.5"
-        android:fromYScale="1.5"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:toXScale="1.0"
-        android:toYScale="1.0" />
+        android:toXScale="0.25"
+        android:toYScale="0.25" />
     <translate
-        android:fromYDelta="10%p"
-        android:toYDelta="80%p" />
+        android:fromYDelta="-20%p"
+        android:toYDelta="100%p" />
     <alpha
         android:fromAlpha="1.0"
         android:toAlpha="0.3" />
