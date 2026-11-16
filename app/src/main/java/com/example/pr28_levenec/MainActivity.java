@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 // Запускаем закат после восхода
-                moonImageView.setVisibility(ImageView.VISIBLE);
+
                 moonImageView.startAnimation(moonFall);
             }
 
